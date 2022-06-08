@@ -19,3 +19,25 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 module.exports = {
   solidity: "0.8.14",
 };
+/*
+module.exports = {
+  solidity: "0.8.4",
+  networks: {
+    ropsten:{
+      url:"puerto"
+    }
+    localhost: {
+      url: "http://127.0.0.1:8545"
+    },
+    hardhat: {
+      // See its defaults
+    },
+  }
+};
+
+para correrlo
+npx hardhat run scripts/deploy.js --network <network-name>
+npx hardhat run scripts/deploy.js --network ropsten
+npx hardhat run scripts/deploy.js --network localhost
+npx hardhat run scripts/deploy.js --network hardhat
+*/
